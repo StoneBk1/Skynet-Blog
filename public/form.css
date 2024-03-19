@@ -1,0 +1,59 @@
+.post-form {
+    background-color: #ffffff; /* White background */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.post-form h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da; /* Light grey border */
+    border-radius: 3px;
+    resize: none;
+}
+textarea {
+    font-size: 18px;
+}
+.title {
+    font-size: larger;
+}
+button[type="submit"] {
+    background-color: #007bff; /* Blue color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    
+}
+
+/* Footer Styles */
+footer {
+    background-color: #007bff; /* Blue color */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

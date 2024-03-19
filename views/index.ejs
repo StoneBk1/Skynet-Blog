@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>make post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <%- include('partials/header.ejs') %> 
+
+    <% if (data.length > 0) { %>
+        <% data.forEach((post) => { %>
+            <div class="user-card">
+                <h3><%= post.title %></h3>
+                <p><%= post.description %></p>
+                <p class="timestamp"><%= formatRelativeTime(post.timestamp)%></p>
+                <button class="btn"><a href="/changes/<%= post.id %>">Make Changes</a></button>
+            </div>
+        <% }); %>
+    <% } else { %>
+        <div class="post">
+            <button><a href="/newPost">Make new Post</a></button>
+        </div>
+    <% } %>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>make changes</title>
+    <link rel="stylesheet" href="/changes.css">
+</head>
+<body>
+    <div class="user-card">
+        <h3><%= postData.title %></h3>
+        <p><%= postData.description %></p>
+        <p class="timestamp"><%= formatRelativeTime(postData.timestamp) %></p>
+        <div class="bt">
+            <div><button class="btn"><a href="/">Home</a></button></div>
+            <div><button class="btn"><a href="/edit/<%= postData.id %>">Edit Post</a></button></div>
+            <div><form method="post" action="/delete/<%= postData.id %>?_method=DELETE" ><button class="btn del" type="submit">Delete Post</button></form></div>
+        </div>
+    </div>
+    
+</body>
+</html>

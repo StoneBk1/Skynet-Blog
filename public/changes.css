@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.user-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    background-color: #fff; /* White background for the card */
+}
+
+.user-card:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.user-card h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.user-card p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.user-card .timestamp {
+    font-size: 12px;
+    color: #999;
+}
+
+.user-card .btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+.del {
+    
+    color: white;
+    font-size: 18px;
+}
+.bt {
+    display: flex;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.user-card .btn:hover {
+    background-color: #0056b3;
+}
